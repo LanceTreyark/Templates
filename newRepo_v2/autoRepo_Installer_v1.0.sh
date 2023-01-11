@@ -7,7 +7,7 @@
 
 
 
-<<comment
+<<comment  # Multi Line Comment #
 This script is designed to do the following: 
 
 Phase One
@@ -44,7 +44,7 @@ curl -o /tmp/exampleRepo/microInit_i1.sh https://raw.githubusercontent.com/Lance
 cp -r /tmp/exampleRepo ~/
 
 
-#--------------------------PHASE Two
+#--------------------------PHASE TWO
 
 # Make a copy of the exampleRepo w/custom name:
 read -p "Choose a file name for your first auto repo:  " autoRepo1
@@ -52,3 +52,12 @@ cd ~/
 cp -r exampleRepo ~/$autoRepo1
 
 
+# make the scripts executable:
+echo "For the command scripts to work, sudo will be required to make them executable"
+sudo chmod +x .bash_aliases
+sudo chmod +x exampleRepo/Q_Com.sh
+sudo chmod +x exampleRepo/microInit_i1.sh
+sudo chmod +x ~/$autoRepo1/Q_Com.sh
+sudo chmod +x ~/$autoRepo1/microInit_i1.sh
+
+echo "The script has concluded, please restart your terminal session for the new commands to take effect."
