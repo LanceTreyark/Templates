@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Please enter you comit message   " var_commit
+read -p "Please enter you commit message   " var_commit
 echo " "
 
 #git add .
